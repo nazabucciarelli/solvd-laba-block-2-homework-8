@@ -1,0 +1,11 @@
+2024-01-13 18:30:32,412 INFO c.s.a.Main [main] Person{id=1, birthDate=Fri Mar 14 00:00:00 ART 2003, firstName='Nazareno', lastName='Bucciarelli', genderId=1, countryId=2, phoneNumber='3458493021'}
+2024-01-13 18:30:32,427 INFO c.s.a.Main [main] Customer{id=1, timesVisitingZoo=2, personId=1}
+2024-01-13 18:30:32,434 INFO c.s.a.Main [main] AnimalRoom{id=1, name='Amphibians', capacity=75}
+2024-01-13 18:30:32,446 INFO c.s.a.Main [main] Animal{id=1, name='Elephant', weight=1300.5, genderId=1, habitatId=1, feedingId=1}
+2024-01-13 18:30:32,473 INFO c.s.a.Main [main] Zoo{id=1, name='California Zoo', customersCapacity=1200, animalRoomList=[AnimalRoom{id=1, name='Aquatic', capacity=300}, AnimalRoom{id=2, name='Insects', capacity=630}, AnimalRoom{id=3, name='Felines', capacity=8}], departmentList=[Department{id=1, name='Business Department', zooId=1}, Department{id=2, name='Security Department', zooId=1}, Department{id=3, name='Human Resources Department', zooId=1}]}
+2024-01-13 18:30:32,616 INFO c.s.a.Main [main] Person{id=1, birthDate=Fri Mar 14 00:00:00 ART 2003, firstName='Nazareno', lastName='Bucciarelli', genderId=1, countryId=9, phoneNumber='35840381843'}
+2024-01-13 18:30:32,624 INFO c.s.a.Main [main] Animal{id=1, name='Elephant', weight=1240.2, genderId=1, habitatId=3, feedingId=7}
+2024-01-13 18:30:32,625 INFO c.s.a.Main [main] Department{id=1, name='Human Resources Department', zooId=1}
+2024-01-13 18:30:32,629 INFO c.s.a.Main [main] EmployeeIdentifier{id=1, positionId=3, departmentId=5, identificationCode='ACXMW2LQ7', imageUrl='https://images.com/image'}
+2024-01-13 18:30:32,637 INFO c.s.a.Main [main] Zoo{id=1, name='California Zoo', customersCapacity=2000, animalRoomList=[AnimalRoom{id=1, name='Amphibians', capacity=95}, AnimalRoom{id=2, name='Fishes', capacity=350}, AnimalRoom{id=3, name='Birds', capacity=34}], departmentList=[Department{id=1, name='Human Resources Department', zooId=1}, Department{id=2, name='Security Department', zooId=1}, Department{id=3, name='Vet Department', zooId=1}, Department{id=4, name='Businesses Department', zooId=1}]}
+2024-01-13 18:30:32,639 INFO c.s.a.Main [main] Habitat{id=1, name='Wetlands'}

@@ -1,0 +1,4 @@
+2024-01-03 17:08:19,102 INFO c.s.a.Main [main] Person{id=1, birthDate=Fri Mar 14 00:00:00 ART 2003, firstName='Nazareno', lastName='Bucciarelli', genderId=1, countryId=9, phoneNumber='35840381843'}
+2024-01-03 17:08:19,115 INFO c.s.a.Main [main] Animal{id=1, name='Elephant', weight=1240.2, genderId=1, habitatId=3, feedingId=7}
+2024-01-03 17:08:19,119 INFO c.s.a.Main [main] Department{id=1, name='Human Resources Department', zooId=1}
+2024-01-03 17:08:19,124 INFO c.s.a.Main [main] EmployeeIdentifier{id=1, positionId=3, departmentId=5, identificationCode='ACXMW2LQ7', imageUrl='https://images.com/image'}

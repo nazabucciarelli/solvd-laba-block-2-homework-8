@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<zoo id="1">
+    <name>California Zoo</name>
+    <customersCapacity>1200</customersCapacity>
+    <animalRooms>
+        <animalRoom id="1" zooId="1">
+            <name>Aquatic</name>
+            <capacity>300</capacity>
+        </animalRoom>
+        <animalRoom id="2" zooId="1">
+            <name>Insects</name>
+            <capacity>630</capacity>
+        </animalRoom>
+        <animalRoom id="3" zooId="1">
+            <name>Felines</name>
+            <capacity>8</capacity>
+        </animalRoom>
+    </animalRooms>
+    <departments>
+        <department id="1" zooId="1">
+            <name>Business Department</name>
+        </department>
+        <department id="2" zooId="1">
+            <name>Security Department</name>
+        </department>
+        <department id="3" zooId="1">
+            <name>Human Resources Department</name>
+        </department>
+    </departments>
+</zoo>

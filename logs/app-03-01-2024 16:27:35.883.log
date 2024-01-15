@@ -1,0 +1,1 @@
+2024-01-03 16:27:36,242 INFO c.s.a.Main [main] Person{id=1, birthDate=Thu Mar 13 21:00:00 ART 2003, firstName='Nazareno', lastName='Bucciarelli', genderId=1, countryId=9, phoneNumber='35840381843'}

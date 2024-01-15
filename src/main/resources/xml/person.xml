@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<person id="1" genderId="1" countryId="2">
+    <birthDate>2003-03-14T00:00:00-03:00</birthDate>
+    <firstName>Nazareno</firstName>
+    <lastName>Bucciarelli</lastName>
+    <phoneNumber>3458493021</phoneNumber>
+</person>

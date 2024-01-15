@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<animal id="1" genderId="1" habitatId="1" feedingId="1">
+    <name>Elephant</name>
+    <weight>1300.5</weight>
+</animal>

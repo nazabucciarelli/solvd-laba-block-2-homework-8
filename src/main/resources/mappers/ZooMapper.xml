@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.solvd.animals_mvc.dao.IZooDAO">
+
+    <sql id="zooSelect">
+        SELECT z.id AS zoo_id, z.name AS zoo_name, z.customers_capacity AS
+        zoo_customers_capacity,d.id AS department_id, d.name
+        AS department_name,
+        ar.id AS animal_room_id, ar.name AS animal_room_name, ar.capacity AS
+        animal_room_capacity FROM zoos AS z
+        LEFT JOIN animal_rooms AS ar ON ar.zoos_id = z.id
+        LEFT JOIN departments AS d ON d.zoos_id = z.id
+    </sql>
+
+    <insert id="insertEntity" useGeneratedKeys="true" keyColumn="id"
+            keyProperty="id">
+        INSERT INTO zoos(name,customers_capacity) VALUES
+        (#{name},#{customersCapacity})
+    </insert>
+
+    <update id="updateEntity">
+        UPDATE zoos AS z SET name = #{entity.name},
+        customers_capacity = #{entity.customersCapacity} WHERE z.id =
+        #{id}
+    </update>
+
+    <delete id="removeEntity">
+        DELETE FROM zoos WHERE id = ${id};
+    </delete>
+
+    <select id="getEntityById" resultMap="zooResultMap">
+        <include refid="zooSelect"/>
+        WHERE z.id = ${id}
+    </select>
+
+    <select id="getEntities" resultMap="zooResultMap">
+        <include refid="zooSelect"/>
+    </select>
+
+    <resultMap id="zooResultMap"
+               type="com.solvd.animals_mvc.model.Zoo"
+               autoMapping="false">
+        <id column="zoo_id" property="id"/>
+        <result column="zoo_name" property="name"/>
+        <result column="zoo_customers_capacity" property="customersCapacity"/>
+        <collection property="departmentList"
+                    ofType="com.solvd.animals_mvc.model.Department"
+                    javaType="ArrayList">
+            <id property="id" column="department_id"/>
+            <result property="name" column="department_name"/>
+        </collection>
+        <collection property="animalRoomList"
+                    ofType="com.solvd.animals_mvc.model.AnimalRoom"
+                    javaType="ArrayList">
+            <id property="id" column="animal_room_id"/>
+            <result property="name" column="animal_room_name"/>
+            <result property="capacity" column="animal_room_capacity"/>
+        </collection>
+    </resultMap>
+</mapper>

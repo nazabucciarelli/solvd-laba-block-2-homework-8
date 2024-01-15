@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customer customerId="1" personId="1">
+    <timesVisitingZoo>2</timesVisitingZoo>
+</customer>

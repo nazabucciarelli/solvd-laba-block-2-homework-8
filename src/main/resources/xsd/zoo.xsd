@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:complexType name="animalRoomType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="capacity" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:int"/>
+        <xs:attribute name="zooId" type="xs:int"/>
+    </xs:complexType>
+
+    <xs:complexType name="animalRoomsType">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" name="animalRoom" type="animalRoomType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="departmentType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:int"/>
+        <xs:attribute name="zooId" type="xs:int"/>
+    </xs:complexType>
+
+    <xs:complexType name="departmentsType">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" name="department" type="departmentType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="zooType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="customersCapacity" type="xs:int"/>
+            <xs:element name="departments" type="departmentsType"/>
+            <xs:element name="animalRooms" type="animalRoomsType"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:int"/>
+    </xs:complexType>
+
+    <xs:element name="zoo" type="zooType"/>
+</xs:schema>

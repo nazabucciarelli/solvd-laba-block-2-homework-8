@@ -1,0 +1,5 @@
+2024-01-02 19:20:01,976 INFO c.s.a.Main [main] Person{id=1, birthDate=Fri Mar 14 00:00:00 ART 2003, firstName='Nazareno', lastName='Bucciarelli', genderId=1, countryId=2, phoneNumber='3458493021'}
+2024-01-02 19:20:01,996 INFO c.s.a.Main [main] Customer{id=1, timesVisitingZoo=2, personId=1}
+2024-01-02 19:20:02,003 INFO c.s.a.Main [main] AnimalRoom{id=1, name='Amphibians', capacity=75}
+2024-01-02 19:20:02,012 INFO c.s.a.Main [main] Animal{id=1, name='Elephant', weight=1300.5, genderId=1, habitatId=1, feedingId=1}
+2024-01-02 19:20:02,031 INFO c.s.a.Main [main] Zoo{id=1, name='California Zoo', customersCapacity=1200, animalRoomList=[AnimalRoom{id=1, name='Aquatic', capacity=300}, AnimalRoom{id=2, name='Insects', capacity=630}, AnimalRoom{id=3, name='Felines', capacity=8}], departmentList=[Department{id=1, name='Business Department', zooId=1}, Department{id=2, name='Security Department', zooId=1}, Department{id=3, name='Human Resources Department', zooId=1}]}

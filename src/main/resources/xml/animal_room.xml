@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<animalRoom id="1" zooId="1">
+    <name>Amphibians</name>
+    <capacity>75</capacity>
+</animalRoom>
