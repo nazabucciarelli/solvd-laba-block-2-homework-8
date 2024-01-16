@@ -1,0 +1,3 @@
+2024-01-16 17:46:50,590 INFO c.s.a.d.d.SMSNotifier [main] Sending email to nazareno the message is: solvd | from SMSNotifier
+2024-01-16 17:46:50,592 INFO c.s.a.d.d.SlackNotifierDecorator [main] Sending email to nazareno the message is: solvd | from SlackNotifierDecorator
+2024-01-16 17:46:50,593 INFO c.s.a.d.d.TelegramNotifierDecorator [main] Sending email to nazareno the message is: solvd | from TelegramNotifierDecorator
