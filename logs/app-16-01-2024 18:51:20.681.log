@@ -1,0 +1,6 @@
+2024-01-16 18:51:20,849 INFO c.s.a.d.p.ProxyInternet [main] Caching website...
+2024-01-16 18:51:20,851 INFO c.s.a.d.p.RealInternet [main] Connected to www.facebook.com
+2024-01-16 18:51:20,852 ERROR c.s.a.d.p.ProxyInternet [main] The website www.bannedurl.com is banned
+2024-01-16 18:51:20,852 INFO c.s.a.d.p.RealInternet [main] Connected to www.facebook.com
+2024-01-16 18:51:20,853 INFO c.s.a.d.p.ProxyInternet [main] Caching website...
+2024-01-16 18:51:20,853 INFO c.s.a.d.p.RealInternet [main] Connected to www.google.com

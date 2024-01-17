@@ -1,5 +1,9 @@
 package com.solvd.animals_mvc.dao;
 
+import com.solvd.animals_mvc.dao.interfaces.IAnimalRoomDAO;
+import com.solvd.animals_mvc.dao.interfaces.IDepartmentDAO;
+import com.solvd.animals_mvc.dao.interfaces.IZooDAO;
+
 public class DBFactory {
     public static IZooDAO getZooDAO(ConnectionTool tool) {
         switch (tool) {

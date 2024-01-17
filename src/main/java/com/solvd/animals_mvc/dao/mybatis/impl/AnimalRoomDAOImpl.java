@@ -1,6 +1,6 @@
 package com.solvd.animals_mvc.dao.mybatis.impl;
 
-import com.solvd.animals_mvc.dao.IAnimalRoomDAO;
+import com.solvd.animals_mvc.dao.interfaces.IAnimalRoomDAO;
 import com.solvd.animals_mvc.dao.MyBatisConfig;
 import com.solvd.animals_mvc.model.AnimalRoom;
 import org.apache.ibatis.session.SqlSession;

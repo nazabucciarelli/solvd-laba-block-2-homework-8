@@ -1,17 +1,15 @@
 package com.solvd.animals_mvc;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.solvd.animals_mvc.model.*;
-import jakarta.xml.bind.JAXBContext;
-import jakarta.xml.bind.JAXBException;
-import jakarta.xml.bind.Marshaller;
-import jakarta.xml.bind.Unmarshaller;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.File;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
+
+import static com.solvd.animals_mvc.utils.JsonParser.parseJsonToObject;
+import static com.solvd.animals_mvc.utils.JsonParser.parseObjectToJson;
+import static com.solvd.animals_mvc.utils.XmlParser.marshalObjectToXml;
+import static com.solvd.animals_mvc.utils.XmlParser.unmarshalXmlToObject;
 
 public class Main {
     private static final Logger LOGGER = LogManager.getLogger(Main.class);
@@ -70,45 +68,5 @@ public class Main {
         parseObjectToJson(employeeIdentifierJson, employeeIdentifier);
         parseObjectToJson(zooJson, zoo);
         parseObjectToJson(habitatJson, habitat);
-    }
-
-    private static <T> T parseJsonToObject(File jsonFile, Class<T> clazz) {
-        ObjectMapper objectMapper = new ObjectMapper();
-        try {
-            objectMapper.setDateFormat(new SimpleDateFormat("yyyy-MM-dd"));
-            return objectMapper.readValue(jsonFile, clazz);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    private static <T> void parseObjectToJson(File resultFile, T object) {
-        ObjectMapper objectMapper = new ObjectMapper();
-        try {
-            objectMapper.writeValue(resultFile, object);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    private static <T> T unmarshalXmlToObject(File file, Class<T> clazz) {
-        try {
-            JAXBContext jaxbContext = JAXBContext.newInstance(clazz);
-            Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
-            return (T) unmarshaller.unmarshal(file);
-        } catch (JAXBException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    private static <T> void marshalObjectToXml(File file, T object) {
-        try {
-            JAXBContext jaxbContext = JAXBContext.newInstance(object.getClass());
-            Marshaller marshaller = jaxbContext.createMarshaller();
-            marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-            marshaller.marshal(object, file);
-        } catch (JAXBException e) {
-            throw new RuntimeException(e);
-        }
     }
 }

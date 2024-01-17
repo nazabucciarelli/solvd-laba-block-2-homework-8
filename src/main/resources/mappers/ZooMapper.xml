@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.solvd.animals_mvc.dao.IZooDAO">
+<mapper namespace="com.solvd.animals_mvc.dao.interfaces.IZooDAO">
 
     <sql id="zooSelect">
         SELECT z.id AS zoo_id, z.name AS zoo_name, z.customers_capacity AS

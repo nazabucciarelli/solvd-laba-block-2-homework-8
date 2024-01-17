@@ -1,4 +1,4 @@
-package com.solvd.animals_mvc.design_patterns.decorator;
+package com.solvd.animals_mvc.design_patterns.decorator.decorator;
 
 public abstract class BaseNotifierDecorator implements INotifier {
     private final INotifier wrapped;

@@ -1,6 +1,6 @@
 package com.solvd.animals_mvc.dao.mybatis.impl;
 
-import com.solvd.animals_mvc.dao.IDepartmentDAO;
+import com.solvd.animals_mvc.dao.interfaces.IDepartmentDAO;
 import com.solvd.animals_mvc.dao.MyBatisConfig;
 import com.solvd.animals_mvc.model.Department;
 import org.apache.ibatis.session.SqlSession;

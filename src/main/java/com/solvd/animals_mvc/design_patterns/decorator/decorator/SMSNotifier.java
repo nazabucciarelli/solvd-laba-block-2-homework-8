@@ -1,4 +1,4 @@
-package com.solvd.animals_mvc.design_patterns.decorator;
+package com.solvd.animals_mvc.design_patterns.decorator.decorator;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

@@ -64,10 +64,6 @@ public class ConnectionPool {
         return false;
     }
 
-    public static int getPoolSize() {
-        return connectionPool.size();
-    }
-
     public static String getFramework() {
         return properties.getProperty("framework");
     }

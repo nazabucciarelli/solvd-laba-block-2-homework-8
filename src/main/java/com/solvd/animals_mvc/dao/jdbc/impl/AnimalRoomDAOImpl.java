@@ -1,7 +1,7 @@
 package com.solvd.animals_mvc.dao.jdbc.impl;
 
 import com.solvd.animals_mvc.dao.ConnectionPool;
-import com.solvd.animals_mvc.dao.IAnimalRoomDAO;
+import com.solvd.animals_mvc.dao.interfaces.IAnimalRoomDAO;
 import com.solvd.animals_mvc.model.AnimalRoom;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

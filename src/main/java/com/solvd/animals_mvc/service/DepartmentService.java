@@ -3,7 +3,7 @@ package com.solvd.animals_mvc.service;
 import com.solvd.animals_mvc.dao.ConnectionPool;
 import com.solvd.animals_mvc.dao.ConnectionTool;
 import com.solvd.animals_mvc.dao.DBFactory;
-import com.solvd.animals_mvc.dao.IDepartmentDAO;
+import com.solvd.animals_mvc.dao.interfaces.IDepartmentDAO;
 import com.solvd.animals_mvc.model.AnimalRoom;
 import com.solvd.animals_mvc.model.Department;
 import org.apache.logging.log4j.LogManager;
